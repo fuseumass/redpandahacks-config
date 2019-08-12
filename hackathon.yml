@@ -2,6 +2,11 @@ name: RedPandaHacks
 version: I # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
 main_website: https://panda.hackumass.com
 dashboard_url: panda-dashboard.hackumass.com
-donotreply: donotreplytothepandas@hackumass.com
-contact_email: pandas@hackumass.com
-
+logos:
+  primary_path: HUMVLogo.png
+  nav_path: navlogo.png
+emails:
+  donotreply: donotreplytothepandas@hackumass.com
+  contact: pandas@hackumass.com
+slack:
+  subdomain: redpandahacks
