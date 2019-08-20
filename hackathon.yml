@@ -10,3 +10,8 @@ emails:
   contact: pandas@hackumass.com
 slack:
   subdomain: redpandahacks
+applications:
+  mode: 'open'
+  # options: open, waitlist, or closed. defaults to closed.
+  # The applications are still not opened unless the applications feature
+  # flag is enabled.
