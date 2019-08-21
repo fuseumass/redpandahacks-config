@@ -6,7 +6,7 @@ First we are going to ask that you please clone the main dashboard repository. Y
 
 Next please create a fork of the `redpandahacks-config` repository. You can do this by clicking the "fork" button at the top right hand corner of this page.
 
-It's at this point that we get into some slightly complicated git magic. If you want an explanation of how it all works, please see the wiki page that we've created on git submodules. If you're wondering why in gods name we've chosen such an architecture, please also consult the wiki. Otherwise, let's just follow along with the following steps.
+It's at this point that we get into some slightly complicated git magic. If you want an explanation of how it all works, please see the [wiki page](https://github.com/hackumass/redpandahacks-config/wiki/Submodules) that we've created on git submodules. If you're wondering why in gods name we've chosen such an architecture, please also consult the wiki. Otherwise, let's just follow along with the following steps.
 
 Fortunately there's basically 0 consequences if you mess this up, as you can _always_ delete the repo and start over without losing much (if any) work.
 
@@ -58,7 +58,7 @@ In this situation you'll have to do the following from within your `hackathon-co
 3. Deal with the merge conflicts! Keep your copy, and our formatting and you should be good to go :)
 
 # Deployment
-For specific deployment instructions, please see the [wiki]().
+For specific deployment instructions, please see the [wiki](https://github.com/hackumass/redpandahacks-config/wiki/Deployment).
 
 # Issues
 If you encounter issues with the functionality of Dashboard please create an issue on the [issues page](https://github.com/hackumass/dashboard/issues) of the main Dashboard repository and tag it with the `bug` label.
