@@ -58,7 +58,7 @@ In this situation you'll have to do the following from within your `hackathon-co
 3. Deal with the merge conflicts! Keep your copy, and our formatting and you should be good to go :)
 
 # Deployment
-For specific deployment instructions, please see the [wiki](https://github.com/hackumass/redpandahacks-config/wiki/Deployment).
+For specific deployment instructions, please see the [dashboard wiki](https://github.com/hackumass/dashboard/wiki/%5BUsers%5D-Deployment).
 
 # Issues
 If you encounter issues with the functionality of Dashboard please create an issue on the [issues page](https://github.com/hackumass/dashboard/issues) of the main Dashboard repository and tag it with the `bug` label.
