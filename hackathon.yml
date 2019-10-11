@@ -15,3 +15,14 @@ applications:
   # options: open, waitlist, or closed. defaults to closed.
   # The applications are still not opened unless the applications feature
   # flag is enabled.
+checkin:
+  # Any participant with this email domain will be counted as from the host university
+  university_email_suffix: pandas.edu
+  university_name: UPandas
+  university_name_checks:
+    - University of Pandas Amherst
+    - UPandas Amherst
+    - Pandas Amherst
+    - Pandas-Amherst
+    - Pandas at Amherst
+    - Pandas, Amherst
