@@ -26,3 +26,6 @@ checkin:
     - Pandas-Amherst
     - Pandas at Amherst
     - Pandas, Amherst
+projects:
+  public: true
+  hacking_begins: "Oct 18, 2019 24:00:00"
