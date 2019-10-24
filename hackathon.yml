@@ -1,31 +1,31 @@
-name: RedPandaHacks
-version: I # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
-main_website: https://panda.hackumass.com
-dashboard_url: panda-dashboard.hackumass.com
+name: HackHer413
+#version: 2020 # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+main_website: 
+dashboard_url: dashboard.hackher413.com
 logos:
   primary_path: PandaLogo.png
   nav_path: navlogo.png
 emails:
-  donotreply: donotreplytothepandas@hackumass.com
-  contact: pandas@hackumass.com
+  donotreply: hackher413@gmail.com
+  contact: hackher413@gmail.com
 slack:
-  subdomain: redpandahacks
+  subdomain: hackher413-2020
 applications:
-  mode: 'open'
+  mode: 'closed'
   # options: open, waitlist, or closed. defaults to closed.
   # The applications are still not opened unless the applications feature
   # flag is enabled.
 checkin:
   # Any participant with this email domain will be counted as from the host university
-  university_email_suffix: pandas.edu
-  university_name: UPandas
+  university_email_suffix: umass.edu
+  university_name: University of Massachusetts, Amherst
   university_name_checks:
-    - University of Pandas Amherst
-    - UPandas Amherst
-    - Pandas Amherst
-    - Pandas-Amherst
-    - Pandas at Amherst
-    - Pandas, Amherst
+    - UMass
+    - UMass Amherst
+    - Mass Amherst
+    - Mass-Amherst
+    - Mass at Amherst
+    - Mass, Amherst
 projects:
   public: true
-  hacking_begins: "Oct 18, 2019 24:00:00"
+  #hacking_begins: ""
