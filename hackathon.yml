@@ -3,7 +3,7 @@ name: HackHer413
 main_website: hackher413.com
 dashboard_url: dashboard.hackher413.com
 logos:
-  primary_path: PandaLogo.png
+  primary_path: 2020hackher_logo.png
   nav_path: navlogo.png
 emails:
   donotreply: hackher413@gmail.com
