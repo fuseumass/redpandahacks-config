@@ -4,3 +4,28 @@
 span.avatar {
     background-image: url(https://hackumass.com/assets/img/bee.png) !important;
 }
+
+/* Make header logo larger */
+a.header-brand {
+    position: absolute;
+    top: 0.25rem
+}
+
+img.header-brand-img {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    vertical-align: bottom;
+    margin-right: .5rem;
+    width: auto;
+}
+
+/* Environment banner, see custom.js */
+.env-banner {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border: 2px solid red;
+    padding: 4px;
+    color: red;
+}
