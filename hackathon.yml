@@ -11,7 +11,7 @@ emails:
 slack:
   subdomain: hackher413-2020
 applications:
-  mode: 'closed'
+  mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.
   # The applications are still not opened unless the applications feature
   # flag is enabled.
