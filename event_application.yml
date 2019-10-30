@@ -3,7 +3,37 @@ options:
   hide_mlh_toc: False
   min_resume_age: 17
 custom_fields:
- - name: linkedin_url
+ - name: ethnicity
+   label: "What is your race/ethnicity?"
+   type: select
+   options:
+    - American Indian or Alaskan Native
+    - Asian / Pacific Islander
+    - Black or African American
+    - Hispanic
+    - White / Caucasian
+    - Multiple ethnicity / Other
+    - Prefer not to answer
+ - name: minor
+   label: "Minor (if applicable)"
+ - name: graduation_year
+   label: "What is your graduation year?"
+   validate_regex: '\d{4}'
+   validate_error: "Your graduation year is not valid (e.g. 2020)"
+ - name: dietary_preferences
+   label: "What are your dietary preferences?"
+   type: multiselect
+   options:
+    - Vegan
+    - Vegetarian
+    - Non-Vegetarian
+    - Vegetarian (No Egg)
+    - Kosher
+    - Halal
+    - Other (please specify in food allergies question)  
+- name: food_allergies
+   label: "What are your food allergies, if any?"
+- name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
    validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
@@ -12,14 +42,14 @@ custom_fields:
    validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
    validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
  - name: other_url
-   label: 'Other website URL'
+   label: 'Personal Website or Portfolio URL'
  - name: been_to_hackathon
    label: 'Have you been to a hackathon before?'
    type: boolean
    required: True
    toggle_field: how_many_hackathons
  - name: how_many_hackathons
-   label: "About how many hackathons have you attended?"
+   label: "How many hackathons have you previously attended?"
    type: select
    options:
     - 1
@@ -28,25 +58,30 @@ custom_fields:
     - 4
     - 5 or more
    hidden: True
- - name: been_to_redpandahacks
-   label: 'Have you previously attended RedPandaHacks?'
+ - name: been_to_hackher
+   label: 'Have you previously attended Hack(H)er413??'
    type: boolean
    required: True
-   toggle_field: previous_redpandahacks_comments
- - name: previous_redpandahacks_comments
-   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
+   toggle_field: previous_hackher_comments
+ - name: previous_hackher_comments
+   label: "Since you have previously attended Hack(H)er413 before, what's one thing you would like to see different or new this year?"
    type: textarea
    max_chars: 500
    hidden: True
  - name: programming_skills
-   label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
+   label: "Programming Skills (select all that apply)"
    type: multiselect
    options:
     - HTML/CSS
-    - Javascript/Node
+    - Javascript
+    - Node.js
+    - Express
+    - Angular
+    - React
+    - Vue
     - PHP
     - SQL
-    - Ruby
+    - Ruby/Ruby on Rails
     - Java
     - Kotlin
     - Swift
@@ -62,47 +97,39 @@ custom_fields:
     - Wireless Communications
     - Circuits
     - 3D Printing
- - name: other_skills
-   label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
+ - name: hardware_preferences
+   label: 'If you are interested in hardware, what hardware do you want to see at Hack(H)er413?'
    type: textarea
    max_chars: 500
- - name: get_out_of_hum
-   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
-   type: multiselect
-   options:
-    - Learn more about hardware and hardware hacking
-    - Learn more about web programming
-    - Learn more about AI and machine learning
-    - Learn more about iOS/Android app development
-    - Hack with people you know
-    - Hack with people you don't know
-    - Receive swag items from sponsors
-    - Network with sponsors
- - name: interested_in_beginner
-   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
-   type: boolean
-   required: True
- - name: how_did_you_hear
-   label: 'How did you hear about RedPandaHacks?'
-   type: multiselect
-   required: True
-   options:
-    - I previously attended RedPandaHacks
-    - From the MLH website
-    - From HackHer413
-    - From another MLH event
-    - Word of mouth
-    - From a teacher
-    - From a friend
-    - Social media
-    - RedPandaHacks t-shirt guerilla marketing
-    - I go to UMass
-    - Other
- - name: what_hardware
-   label: 'What hardware do you want to see at RedPandaHacks?'
-   type: 'textarea'
+ - name: other_skills
+   label: 'If there are any other tech or non-tech related skills not listed above that you would like to share, list them below'
+   type: textarea
    max_chars: 500
+ - name: any_hack
+   label: 'If you could create any hack at Hack(H)er413, without any technical, financial, or time restrictions, what would it be?'
+   type: textarea
+   max_chars: 500
+ - name: empower
+   label: 'How do you empower diversity in technology or how do you plan to empower diversity in technology in the future?'
+   type: textarea
+   max_chars: 500
+ - name: how_did_you_hear
+   label: 'How did you learn about Hack(H)er413? '
+   type: textarea
+   max_chars: 500
+ - name: sleeping
+   label: 'Do you plan on sleeping during the hackathon? This helps us to get a headcount for sleeping accommodations!'
+   type: boolean
+ - name: beginner
+   label: "Please select the attendee track you identify with and will be participating in at the hackathon. Our tracks are simply two categories we utilize to organize events at the hackathon so participants can have an understanding of the difficulty/programming level before attending. Any participant can attend any event under any track, this is simply a way for us to organize the various events under two identifiers! The two tracks at Hack(H)er413 2020 are: "
+   type: select
+   options:
+    - Beginner Track (recommended for undergraduate students and first-time programmers, includes introductory workshops given by sponsor companies and meet-ups for beginners in tech)
+    - Beginner++ Track (recommended for intermediate programmers, Masters and Ph.D. students; includes tech talks given by computer science & technology professors on their research/dissertations and more) 
  - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
-
-
+   label: "Are you excited to become a part of the beehive?! #iBeelong #PartoftheSwarm"
+   type: select
+   options:
+    - Yes
+    - YES
+    - HELL YES
