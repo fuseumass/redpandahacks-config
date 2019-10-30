@@ -31,9 +31,9 @@ custom_fields:
     - Kosher
     - Halal
     - Other (please specify in food allergies question)  
-- name: food_allergies
+ - name: food_allergies
    label: "What are your food allergies, if any?"
-- name: linkedin_url
+ - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
    validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
@@ -124,8 +124,8 @@ custom_fields:
    label: "Please select the attendee track you identify with and will be participating in at the hackathon. Our tracks are simply two categories we utilize to organize events at the hackathon so participants can have an understanding of the difficulty/programming level before attending. Any participant can attend any event under any track, this is simply a way for us to organize the various events under two identifiers! The two tracks at Hack(H)er413 2020 are: "
    type: select
    options:
-    - Beginner Track (recommended for undergraduate students and first-time programmers, includes introductory workshops given by sponsor companies and meet-ups for beginners in tech)
-    - Beginner++ Track (recommended for intermediate programmers, Masters and Ph.D. students; includes tech talks given by computer science & technology professors on their research/dissertations and more) 
+    - "Beginner Track (recommended for undergraduate students and first-time programmers, includes introductory workshops given by sponsor companies and meet-ups for beginners in tech)"
+    - "Beginner++ Track (recommended for intermediate programmers, Masters and Ph.D. students; includes tech talks given by computer science & technology professors on their research/dissertations and more)"
  - name: fun_question
    label: "Are you excited to become a part of the beehive?! #iBeelong #PartoftheSwarm"
    type: select
