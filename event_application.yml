@@ -118,7 +118,7 @@ custom_fields:
    required: true
    max_chars: 500
  - name: how_did_you_hear
-   label: 'How did you learn about Hack(H)er413? '
+   label: 'How did you learn about Hack(H)er413?'
    type: textarea
    required: true
    max_chars: 500
@@ -136,6 +136,6 @@ custom_fields:
    label: "Are you excited to become a part of the beehive?! #iBeelong #PartoftheSwarm"
    type: select
    options:
-    - Yes
-    - YES
-    - HELL YES
+    - "Yes"
+    - "YES"
+    - "HELL YES"
