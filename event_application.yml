@@ -107,6 +107,9 @@ custom_fields:
    label: 'If there are any other tech or non-tech related skills not listed above that you would like to share, list them below'
    type: textarea
    max_chars: 500
+ - name: learn_hackher
+   label: 'What technologies, skills, programming languages, etc. do you want to learn at Hack(H)er413 through workshops?'
+   type: textarea
  - name: any_hack
    label: 'If you could create any hack at Hack(H)er413, without any technical, financial, or time restrictions, what would it be?'
    type: textarea
@@ -126,6 +129,11 @@ custom_fields:
    label: 'Do you plan on sleeping during the hackathon? This helps us to get a headcount for sleeping accommodations!'
    type: boolean
    required: true
+ - name: bus
+   label: 'Where will you be traveling from to come to the hackathon?'
+   type: textarea
+   required: true
+   max_chars: 500
  - name: beginner
    label: "Please select the attendee track you identify with and will be participating in at the hackathon. Our tracks are simply two categories we utilize to organize events at the hackathon so participants can have an understanding of the difficulty/programming level before attending. Any participant can attend any event under any track, this is simply a way for us to organize the various events under two identifiers! The two tracks at Hack(H)er413 2020 are"
    type: select
