@@ -5,6 +5,7 @@ dashboard_url: dashboard.hackher413.com
 logos:
   primary_path: 2020hackher_logo.png
   nav_path: navlogo.png
+  favicon_path: favicon.png 
 emails:
   donotreply: noreply@hackher413.com
   contact: contact@hackher413.com
