@@ -28,13 +28,13 @@ custom_fields:
     - 4
     - 5 or more
    hidden: True
- - name: been_to_redpandahacks
-   label: 'Have you previously attended RedPandaHacks?'
-   type: boolean
-   required: True
-   toggle_field: previous_redpandahacks_comments
- - name: previous_redpandahacks_comments
-   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
+#  - name: been_to_redpandahacks
+#    label: ''
+#    type: boolean
+#    required: True
+#    toggle_field: previous_redpandahacks_comments
+#  - name: previous_redpandahacks_comments
+#    label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
    type: textarea
    max_chars: 500
    hidden: True
@@ -67,7 +67,7 @@ custom_fields:
    type: textarea
    max_chars: 500
  - name: get_out_of_hum
-   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
+   label: 'What would you like to get out of WeHack? (select all that apply)'
    type: multiselect
    options:
     - Learn more about hardware and hardware hacking
@@ -83,23 +83,19 @@ custom_fields:
    type: boolean
    required: True
  - name: how_did_you_hear
-   label: 'How did you hear about RedPandaHacks?'
+   label: 'How did you hear about WeHack'
    type: multiselect
    required: True
    options:
-    - I previously attended RedPandaHacks
-    - From the MLH website
-    - From HackHer413
-    - From another MLH event
     - Word of mouth
     - From a teacher
     - From a friend
     - Social media
-    - RedPandaHacks t-shirt guerilla marketing
-    - I go to UMass
+    - My friends would'nt stop talking about it
+    - I go to UTD
     - Other
  - name: what_hardware
-   label: 'What hardware do you want to see at RedPandaHacks?'
+   label: 'What hardware do you want to see at WeHack?'
    type: 'textarea'
    max_chars: 500
  - name: fun_question

@@ -3,8 +3,8 @@ version: I # Could also be a roman numeral or other number, will be concatenated
 main_website: https://panda.hackumass.com
 dashboard_url: panda-dashboard.hackumass.com
 logos:
-  primary_path: PandaLogo.png
-  nav_path: navlogo.png
+  primary_path: wehacklogo.png
+  nav_path: wehack.png
 emails:
   donotreply: donotreplytothepandas@hackumass.com
   contact: pandas@hackumass.com
