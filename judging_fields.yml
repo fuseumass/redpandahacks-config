@@ -1,0 +1,56 @@
+options:
+
+custom_fields:
+  - name: originality
+    label: "How unique is this project compared to other technologies?"
+    type: button
+    max: 20
+    scores:
+      - points: 5
+        description: "Project directly replicates an existing technology."
+      - points: 10
+        description: "Project makes minor changes to an existing technology."
+      - points: 15
+        description: "Project is original but lacks creativity or a WOW factor."
+      - points: 20
+        description: "Project is original, creative, and has a WOW factor."
+  - name: execution
+    label: "How well does the project hold up to the description?"
+    type: range
+    max: 50
+    scores:
+      - points: 12.5
+        description: "Project just doesn't work."
+      - points: 25 
+        description: "Project works correctly based on the objective."
+      - points: 37.5
+        description: "The project is successful, however minor details don't work correctly."
+      - points: 50
+        description: "The project is completely successful and does exactly what it is supposed to do."
+  - name: presentation
+    label: "How well did the hackers present their project?"
+    type: range_restricted
+    max: 30
+    scores: 
+      - points: 7.5
+        description: "Extremely poor communication between team members or no presentation at all."
+      - points: 15
+        description: "The team is able to communicate what their project does however does not have a strong understanding or grasp."
+      - points: 22.5
+        description: "The team has a strong understanding of their project and can explain it well, however they missed minor details."
+      - points: 30
+        description: "The team can effectively and optimally explain what their project entails and how it is implemented in a very clear and concise manner."
+  - name: judges_feeling
+    label: "How much do you like this project?"
+    type: dropdown
+    max: 3
+    scores: 
+      - points: 0
+        description: "I dislike it (0pts)"
+      - points: 1
+        description: "I like it (1pts)"
+      - points: 2
+        description: "I love it (2pts)"
+      - points: 3
+        description: "This is amazing (3pts)"
+        
