@@ -21,6 +21,10 @@ Inside this file, please replace the url with your url to the forked config repo
 
 Now you'll want to open a terminal and navigate to the folder containing the dashboard folder. Here, you'll want to run the following command `git submodule update --init --remote`.
 
+Double check that Git has updated the configuration repo properly by seeing whether any of the files in the `hackathon-config` folder were updated with those from the `yourhackathon-config` repo. If it still shows up as redpandahacks, try this to bypass the flawed behavior of the git submodule update command above:
+ - `rm -rf hackathon-config`
+ - `git clone https://github.com/your-username/yourhackathon-config hackathon-config`
+
 Now the `hackathon-config` folder is a submodule that tracks the github repository you created for your fork.
 
 ## Running the application
