@@ -1,56 +1,79 @@
 options:
 
 custom_fields:
-  - name: howred
-    label: "How red is this project compared to other RedPanda Hacks?"
+  - name: originality
+    label: "How unique is the concept?"
     type: button
     max: 20
     scores:
-      - points: 5
-        description: "Project is not red at all."
-      - points: 10
-        description: "Has some red, but not enough for a true Red Panda"
-      - points: 15
-        description: "Acceptable amount of red"
+      - points: 7
+        description: "A copy or clone of something already out there, e.g. an existing app"
+      - points: 14
+        description: "Project improves upon an existing app or a solution to a problem"
       - points: 20
-        description: "Amazing! Very red"
-  - name: works
-    label: "Does the hack work?"
-    type: range
-    max: 50
+        description: "Idea is completely novel and/or is a completely new solution to a problem"
+  - name: technical_depth
+    label: "How sophistaced/difficult is the idea to implement?"
+    type: button
+    max: 10
     scores:
-      - points: 12.5
-        description: "Project just doesn't work."
-      - points: 25 
-        description: "Project works in some cases."
-      - points: 37.5
-        description: "Project works in most cases, however minor details don't work correctly."
-      - points: 50
-        description: "The project is completely successful and does exactly what it is supposed to do."
-  - name: presentation
-    label: "How well was this project presented?"
-    type: range_restricted
-    step: 7.5
+      - points: 3
+        description: "Straightforward use of existing APIs, frameworks, or solutions"
+      - points: 6
+        description: "Uses a mix of new and existing ideas/tech to solve problems"
+      - points: 10
+        description: "Project contains novel and well thought out solutions to hard problems"
+  - name: execution
+    label: "How well does each piece of the project work?"
+    type: button
     max: 30
     scores: 
-      - points: 7.5
-        description: "Very bad. I didn't even know they were presenting."
-      - points: 15
-        description: "They tried, but didn't really do so well"
-      - points: 22.5
-        description: "OK, but missed some details"
+      - points: 5
+        description: "The individual pieces of the project are not connected and coherent"
+      - points: 20
+        description: "The individual pieces work with some functional issues or major flaws"
       - points: 30
-        description: "Amazing job! Very smoothly done with attention to detail."
-  - name: judges_feeling
-    label: "How much do you like Red Pandas?"
-    type: dropdown
-    max: 3
+        description: "The individual pieces are compeltely functional with minimal issues"
+  - name: integration
+    label: "How well does the project work as a whole?"
+    type: button
+    max: 30
+    scores: 
+      - points: 3
+        description: "The pieces of the project are not connected and coherent"
+      - points: 6
+        description: "The pieces are connected with some functional issues"
+      - points: 10
+        description: "Project is very well connected from end to end and shows good polish"
+  - name: relevant_experience
+    label: "How much did the team members learn vs. what did they already know?"
+    type: button
+    max: 15
+    scores: 
+      - points: 3
+        description: "Team was fully capable and equipped with the background to execute the project idea"
+      - points: 8
+        description: "Team had some experience and basic background knowledge coming into the event"
+      - points: 15
+        description: "Team had little to no experience in the tools, technologies, and/or field related to the idea"
+  - name: depth_of_knowledge
+    label: "How much do team members understand of what they built and how it works?"
+    type: button
+    max: 15
+    scores: 
+      - points: 3
+        description: "The team demonstrated little to no knowledge of tools and technologies used in the project"
+      - points: 8
+        description: "The team is able to explain at a basic level, but unable to show deeper understanding (e.g. why certain things work)"
+      - points: 15
+        description: "The team is able to demonstrate a coherent and thorough technical understanding of event component in the project"
+
+  - name: judge_points
+    label: "Award up to 5 points if you really think this project went above and beyond in some way and/or you really liked it."
+    type: range
+    max: 5
     scores: 
       - points: 0
-        description: "I dislike them (1pt because Red Pandas should at least get 1)"
-      - points: 1
-        description: "I like them (2pts)"
-      - points: 2
-        description: "I love them (3pts)"
-      - points: 3
-        description: "They are amazing! (4pts)"
+        description: "No additional points"
+      - points: 5
+        description: "Maximum additional points"
