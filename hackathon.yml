@@ -8,6 +8,7 @@ logos:
 emails:
   donotreply: donotreplytothepandas@hackumass.com
   contact: pandas@hackumass.com
+  email_verification: false
 slack:
   subdomain: redpandahacks
 applications:
