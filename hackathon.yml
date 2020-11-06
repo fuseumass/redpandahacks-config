@@ -10,6 +10,7 @@ emails:
   contact: pandas@hackumass.com
   email_verification: false
 slack:
+  enabled: true  # Set to true or false to toggle slack integration
   subdomain: redpandahacks
 applications:
   mode: 'open'
