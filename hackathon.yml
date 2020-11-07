@@ -5,6 +5,7 @@ dashboard_url: panda-dashboard.hackumass.com
 logos:
   primary_path: PandaLogo.png
   nav_path: navlogo.png
+  favicon_url: https://hackumass.com/assets/img/favicon-hum8.ico
 emails:
   donotreply: donotreplytothepandas@hackumass.com
   contact: pandas@hackumass.com
